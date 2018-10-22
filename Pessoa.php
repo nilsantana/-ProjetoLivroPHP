@@ -12,5 +12,46 @@
  * @author Nil
  */
 class Pessoa {
-    //put your code here
+    //atributos encapsulados
+   private  $nome;
+   private $idade;
+   private $sexo;
+   //método para acrescentar + 1 à idade
+   public function fazerAniversario(){
+       $this ->idade ++;
+   } 
+   
+   //métodos especiais
+   //construtor
+   function Pessoa($nome, $idade, $sexo) {
+       $this->nome = $nome;
+       $this->idade = $idade;
+       $this->sexo = $sexo;
+   }
+   //getters & settters
+   function getNome() {
+       return $this->nome;
+   }
+
+   function getIdade() {
+       return $this->idade;
+   }
+
+   function getSexo() {
+       return $this->sexo;
+   }
+
+   function setNome($nome) {
+       $this->nome = $nome;
+   }
+
+   function setIdade($idade) {
+       $this->idade = $idade;
+   }
+
+   function setSexo($sexo) {
+       $this->sexo = $sexo;
+   }
+
+
 }

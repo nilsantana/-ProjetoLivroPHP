@@ -11,5 +11,10 @@
  * @author Nil
  */
 interface Publicacao {
-    //put your code here
+   public function abrir();
+   public function fechar();
+   public function folhear($p);
+   public function avancaPag();
+   public function voltarPag();
+ 
 }
